@@ -174,4 +174,12 @@ export class Pessoa {
     public comendoComida(_prato:string):void {
         console.log(`${this.nome} esta comendo: Uma${_prato}`);
     }
+
+    /**
+     * CRUD
+     */
+    cadastroPessoas(bananinha: Pessoa) {
+        //persistindo os dados
+        console.log(`${bananinha.nome} cadastrado com sucesso`)
+    }
 }

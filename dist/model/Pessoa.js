@@ -125,9 +125,52 @@ class Pessoa {
         //lógica de negócio
         console.log(`${this.nome} está falando`);
     }
+    /**
+     *
+     * @param _frase
+     */
     falarFrase(_frase) {
         //lógica de negócio
         console.log(`${this.nome} fala: ${_frase}`);
+    }
+    /**
+     *
+     * função para andar
+     *
+     */
+    andar() {
+        console.log(`${this.nome} esta andando`);
+    }
+    /**
+     *
+     * @param _Quilometros
+     */
+    andandoDistancia(_Quilometros) {
+        setTimeout(() => {
+            console.log(`${this.nome} anda: ${_Quilometros} Quilometros`);
+        }, 3000);
+    }
+    /**
+     *
+     * comer: função para comer
+     *
+     */
+    comer() {
+        console.log(`${this.nome} esta comendo`);
+    }
+    /**
+     *
+     * @param _prato
+     */
+    comendoComida(_prato) {
+        console.log(`${this.nome} esta comendo: Uma${_prato}`);
+    }
+    /**
+     * CRUD
+     */
+    cadastroPessoas(bananinha) {
+        //persistindo os dados
+        console.log(`${bananinha.nome} cadastrado com sucesso`);
     }
 }
 exports.Pessoa = Pessoa;
